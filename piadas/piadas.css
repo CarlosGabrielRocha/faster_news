@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'piada';
+    src: url('../fontes/Cakecafe.ttf');
+}
+
+header > h1 {
+    font-family: 'piada';
+    font-size: 2.6em;
+    letter-spacing: 1px;
+    text-shadow: 5px 1px 4px black;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    height: auto; 
+    margin-top: 100px;   
+    background-color: #1f1f1f;
+}
+
+main > section {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+section > iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    border: 5px solid rgba(0, 0, 0, 0.479);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.322);
+}
+
+main p {
+    padding: 5px;
+    text-align: justify;
+}
+
+
+section h1 {
+   font-size: 2.2em;
+}
+
+section.conto > .box {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.151);
+    
+}
+
+.box p {
+    padding: 10px;
+}
+
+section.conto h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color:  white
+}
+
+section.principal {
+    align-items: center;
+    font-size: 1.3em;
+}
+
+section.principal p {
+    margin-bottom: 10px;
+}
+
+section.principal > div {
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.151);
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+section.principal > div:hover {
+    color: yellow;
+}
+
+section.principal > iframe {
+    display: none;
+}
+
+@media screen and (max-width: 370px) {
+    
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    iframe {
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        width: 95vw;
+        max-width: 500px;
+    }
+
+    section h1 {
+        font-size: 1.6em;
+    }
+
+    section.vid > p {
+        width: 80vw;
+        max-width: 450px;
+    }
+
+    hr {
+        width: 80vw;
+        max-width: 450px;
+    }
+    
+    iframe {
+        width: 85vw;
+        max-width: 450px;
+        height: 230px;
+    }
+
+    section.conto h1 {
+        font-size: 1.6em;
+    }
+
+    section.principal {
+        font-size: 1.1em;
+    }
+
+    footer {
+        height: 165px;
+    }
+    
+    footer > p#acorde {
+        font-size: 1.8em;
+    }
+    
+    footer p {
+        font-size: 1.3em;
+    }
+    
+    footer > div#rodapé {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main {
+        width: 700px;
+        height: auto;
+    }
+    
+    hr {
+        width: 655px;
+    }
+}
+
+
+
+
+
+
+
