@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'relogio';
+    src: url('../fontes/alarmclock.ttf');
+}
+
+/* font-family: "Open Sans", sans-serif; */
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+header h1 {
+    color: orangered;
+}
+
+nav > span.menu {
+    background: rgba(255, 255, 255, 0.349)
+}
+
+main {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    border-radius: 0px;
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    
+}
+
+main h1 {
+    position: absolute;
+    top: 250px;
+    font-size: 3.5em;
+    font-weight: lighter;
+}
+
+main > p {
+    transform: translateY(50px);
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+section#contagem {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 200px;
+
+    border-radius: 30px;
+    background-color: #1f1f1f56;
+}
+
+section > div {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    font-family: 'relogio';
+    font-size: 4em;
+    text-align: center; 
+    border-right: 2px solid black;
+}
+
+#segundos {
+    border: none;
+}
+
+#dias {
+    font-family: 'relogio';
+}
+
+
+div > span {
+    font-size: .3em;
+    font-family: "Open Sans", sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: orangered;
+    border-top: 2px solid white;
+}
+
+footer > #rodapé {
+    background-color: #1f1f1f56;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    section#contagem {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+
+    header > h1 {
+        font-size: 3em;
+    }
+
+    header > span#menumobile:hover {
+        color: orangered;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    main {
+        width: 95vw;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    main h1 {
+        position: static;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+    }
+
+    main p {
+        font-size: 2em;
+    }
+
+    section#contagem {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        max-width: 430px;
+        height: 600px;
+    }
+
+    section div {
+        display: block;
+        padding: 25px;
+        width: 60vw;
+        max-width: 370px;
+        height: 150px;
+        font-family: 'relogio';
+        font-size: 1.5em;
+        border-bottom: 2px solid black;
+        border-right: none;
+    }
+    
+    #segundos {
+        border: none;
+    }
+    
+    #dias {
+        font-family: 'relogio';
+    }
+
+    div > span {
+        font-size: .6em;
+    }
+
+    footer {
+        height: 165px;
+    }
+
+    footer > p#acorde {
+        font-size: 1.8em;
+    }
+    
+    footer p {
+        font-size: 1.3em;
+    }
+    
+    footer > div#rodapé {
+        font-size: 0.8em;
+    }
+    
+}
